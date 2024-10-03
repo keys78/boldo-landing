@@ -1,9 +1,11 @@
 import Footer from "./components/navigation/Footer";
 import Navbar from "./components/navigation/Navbar";
 import Accordion from "./components/partitions/Accordion";
+import Blog from "./components/partitions/Blog";
 import Carousel from "./components/partitions/Carousel";
 import Hero from "./components/partitions/Hero";
 import Services from "./components/partitions/Services";
+import NewsLetterSubscription from "./components/shared/NewsLetterSubscription";
 
 function App() {
 
@@ -35,6 +37,13 @@ function App() {
       </section>
       <section className="p-[100px]">
         <Accordion />
+      </section>
+      <section className="pb-[100px]">
+        <Blog />
+      </section>
+
+      <section className="p-[100px]">
+        <NewsLetterSubscription />
       </section>
 
       <section className="p-[100px]">

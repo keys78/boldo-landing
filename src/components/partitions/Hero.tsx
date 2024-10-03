@@ -15,7 +15,7 @@ const Hero = () => {
             non-disclosure.
           </p>
           <div className="flex items-center space-x-4">
-            <button className="bg-customGreen text-customNavy px-12 py-4 rounded-full font-semibold">
+            <button className="bg-customGreen text-customNavy px-8 py-4 rounded-full font-semibold">
               Buy Template
             </button>
             <button className="border-2 border-white text-white px-12 py-4 rounded-full font-semibold">
