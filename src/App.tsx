@@ -38,7 +38,7 @@ function App() {
         <Accordion />
       </section>
 
-      <section className="s-767:pb-[100px] pb-[40px]">
+      <section className="s767:pb-[100px] pb-[40px] s767:py-0 py-[60px]">
         <Blog />
       </section>
 

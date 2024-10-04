@@ -17,20 +17,6 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
-      animation: {
-        fadeIn: "fadeIn 1s ease-out",
-        slideUp: "slideUp 0.8s ease-out",
-      },
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
-        slideUp: {
-          "0%": { transform: "translateY(50px)", opacity: 0 },
-          "100%": { transform: "translateY(0)", opacity: 1 },
-        },
-      },
     },
     screens: {
       s480: "480px",
@@ -43,7 +29,6 @@ export default {
 
       s1220: "1220px",
 
-      desktop: "1280px",
     },
   },
   plugins: [],
