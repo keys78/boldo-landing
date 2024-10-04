@@ -26,9 +26,9 @@ const Accordion = () => {
       <div className="w-full">
         <img src={accord_img} alt="" className="w-full" />
       </div>
-      <div className="flex items-start space-x-64 justify-between w-full mt-[56px]">
-        <div className="max-w-[493px] flex flex-col space-y-5">
-          <h3 className="text-[36px] manrope mb-10">
+      <div className="flex s767:flex-row flex-col items-start s1220:space-x-56 s767:space-x-20 justify-between w-full mt-[56px]">
+        <div className="max-w-[493px] flex flex-col space-y-5 s767:mx-0 mx-auto">
+          <h3 className="s767:text-[36px] text-[32px] s767:text-left text-center manrope mb-10">
             We connect our customers with the best, and help them keep up-and
             stay open.
           </h3>

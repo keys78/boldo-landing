@@ -8,11 +8,10 @@ import Services from "./components/partitions/Services";
 import NewsLetterSubscription from "./components/shared/NewsLetterSubscription";
 
 function App() {
-
   return (
-    <main>
-      <section className="bg-customNavy px-[100px]">
-        <div className="absolute top-0 right-0">
+    <main className="">
+      <section className="bg-customNavy s1220:px-[100px] s1024:px-[40px] px-[20px]">
+        <div className="absolute top-0 right-0 s767:block hidden">
           <svg
             width="623"
             height="504"
@@ -23,34 +22,32 @@ function App() {
             <circle cx="646.5" cy="-142.5" r="646.5" fill="#1C3D5B" />
           </svg>
         </div>
-
         <Navbar />
         <Hero />
       </section>
 
-      <section className="px-[100px]">
+      <section className="s1220:px-[100px] s1024:px-[40px] px-[20px]">
         <Services />
       </section>
 
-      <section className="bg-customNavy p-[100px]">
+      <section className="bg-customNavy s1220:p-[100px] s1024:p-[40px] p-[20px]">
         <Carousel />
       </section>
-      <section className="p-[100px]">
+
+      <section className="s1220:p-[100px] s1024:p-[40px] p-[20px] mt-10">
         <Accordion />
       </section>
-      <section className="pb-[100px]">
+
+      <section className="s-767:pb-[100px] pb-[40px]">
         <Blog />
       </section>
 
-      <section className="p-[100px]">
+      <section className="s1220:p-[100px] s1024:p-[40px] p-[20px]">
         <NewsLetterSubscription />
-      </section>
-
-      <section className="p-[100px]">
         <Footer />
       </section>
     </main>
   );
 }
 
-export default App
+export default App;

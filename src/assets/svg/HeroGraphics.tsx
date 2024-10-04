@@ -1,8 +1,8 @@
-const HeroGraphics = () => {
+const HeroGraphics = ({ className }: any) => {
   return (
     <svg
-      width="494"
-      height="423"
+      // width="494"
+      className={className}
       viewBox="0 0 494 423"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -394,6 +394,6 @@ const HeroGraphics = () => {
       </defs>
     </svg>
   );
-}
+};
 
 export default HeroGraphics

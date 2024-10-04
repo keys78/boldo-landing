@@ -1,6 +1,8 @@
 import { useState } from "react";
 import author_one from "../../assets/png/author_one.png";
 import ArrowRight from "../../assets/svg/ArrowRight";
+import { motion } from "framer-motion";
+
 
 const items = [
   {
@@ -31,7 +33,9 @@ const items = [
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerView = 3;
+
+  const itemsPerView =
+    window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
 
   const nextItem = () => {
     setCurrentIndex(
@@ -46,20 +50,29 @@ const Carousel = () => {
   };
 
   return (
-    <div className="max-w-[1400px] overflow-x-auto">
-      <h2 className="text-[48px] manrope text-white max-w-[700px]">
+    <div className="max-w-[1400px] overflow-x-auto s480:pt-0 py-5">
+      <h2 className="s767:text-[48px] text-[32px] s767:text-left text-center manrope text-white max-w-[700px] pb-5">
         An enterprise template to ramp up your company website
       </h2>
       <div className="flex items-center justify-end mt-4">
-        <button
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           onClick={prevItem}
           className="mr-4 bg-white rounded-full p-4 rotate-180"
         >
           <ArrowRight />
-        </button>
-        <button className="bg-white rounded-full p-4" onClick={nextItem}>
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          className="bg-white rounded-full p-4"
+          onClick={nextItem}
+        >
           <ArrowRight />
-        </button>
+        </motion.button>
       </div>
       <div className="overflow-hidden mt-6">
         <div

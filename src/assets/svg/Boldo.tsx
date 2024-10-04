@@ -1,8 +1,9 @@
 
-const Boldo = ({fill}: any) => {
+const Boldo = ({fill, className}: any) => {
   return (
     <svg
-      width="146"
+      // width="146"
+      className={className}
       height="38"
       viewBox="0 0 146 38"
       fill="none"

@@ -1,7 +1,8 @@
-const Presto = () => {
+const Presto = ({ className }: any) => {
   return (
     <svg
-      width="148"
+      // width="148"
+      className={className}
       height="37"
       viewBox="0 0 148 37"
       fill="none"
@@ -43,6 +44,6 @@ const Presto = () => {
       </defs>
     </svg>
   );
-}
+};
 
 export default Presto

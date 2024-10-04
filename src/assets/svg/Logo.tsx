@@ -1,8 +1,9 @@
 
-const Logo = () => {
+const Logo = ({ className }: any) => {
   return (
     <svg
-      width="163"
+      // width="163"
+      className={className}
       height="42"
       viewBox="0 0 163 42"
       fill="none"
@@ -22,6 +23,6 @@ const Logo = () => {
       />
     </svg>
   );
-}
+};
 
 export default Logo

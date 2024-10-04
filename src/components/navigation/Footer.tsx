@@ -2,49 +2,49 @@ import Boldo from "../../assets/svg/Boldo";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="flex items-start space-x-5">
-        <div className="min-w-[500px]">
+    <footer className="s991:pt-[200px] pt-[100px]">
+      <div className="flex s767:flex-row flex-col items-start s1220:space-x-[170px] s767:space-x-[80px] s767:space-y-0 space-y-8">
+        <div className="max-w-[500px]">
           <Boldo fill="#0A2640" />
-          <p className="max-w-[300px] text-customGray pt-5">
+          <p className="s480:max-w-[300px] text-customGray pt-5">
             Social media validation business model canvas graphical user
             interface launch party creative facebook iPad twitter.
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-40 text-customGray">
+        <div className="grid s991:grid-cols-3 grid-cols-2 s991:gap-40 gap-16 text-customGray list-none">
           <div className="flex flex-col space-y-5">
             <h3 className="text-customNavy font-semibold text-[20px]">
               Landings
             </h3>
-            <p>Home</p>
-            <p>Products</p>
-            <p>Services</p>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
           </div>
           <div className="flex flex-col space-y-5">
             <h3 className="text-customNavy font-semibold text-[20px]">
               Company
             </h3>
-            <p>Home</p>
-            <p>
+            <li>Home</li>
+            <li className="whitespace-nowrap">
               Career{" "}
               <span className="bg-customGreen py-1 px-4 text-customNavy rounded-full">
                 Hiring!
               </span>
-            </p>
-            <p>Services</p>
+            </li>
+            <li>Services</li>
           </div>
           <div className="flex flex-col space-y-5">
             <h3 className="text-customNavy font-semibold text-[20px]">
               Resources
             </h3>
-            <p>Blog</p>
-            <p>Products</p>
-            <p>Services</p>
+            <li>Blog</li>
+            <li>Products</li>
+            <li>Services</li>
           </div>
         </div>
       </div>
-      <p className="text-customGray">All rights reserved.</p>
+      <p className="text-customGray s480:pt-0 pt-10">All rights reserved.</p>
     </footer>
   );
 };
